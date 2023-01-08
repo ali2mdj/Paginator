@@ -16,7 +16,7 @@ $pagination->hasPages(); // True if you have more rows count than rows per page.
 Sample PHP Code after setting up pagination object.<br>
 <br>
 
-<code>
+```
 <?php $elements = $paginator->getPagingElements(); ?>
 <nav class="app-pagination" aria-label="...">
     <ul class="pagination justify-content-center">
@@ -59,3 +59,4 @@ Sample PHP Code after setting up pagination object.<br>
     </ul>
 </nav>
 </code>
+```
