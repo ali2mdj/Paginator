@@ -2,19 +2,21 @@
 Simple but powerful PHP pagination class
 
 # Usage
-$rowsCount = Number of Rows from the Query.
-$endPath = URL of the page you want the pagination to work.
-$rowsPerPage = Number of rows per page.
+$rowsCount = Number of Rows from the Query.<br>
+$endPath = URL of the page you want the pagination to work.<br>
+$rowsPerPage = Number of rows per page.<br>
+<br>
+$pagination = new Paginator($rowsCount,$endPath,$rowsPerPage);  // Create Pagination object.<br>
+<br>
+$pagination->getOffset(); // Gets the offset for MySQL Query.<br>
+<br>
+$pagination->hasPages(); // True if you have more rows count than rows per page.<br>
+<br>
+<br>
+Sample PHP Code after setting up pagination object.<br>
+<br>
 
-$pagination = new Paginator($rowsCount,$endPath,$rowsPerPage);  // Create Pagination object.
-
-$pagination->getOffset(); // Gets the offset for MySQL Query.
-
-$pagination->hasPages(); // True if you have more rows count than rows per page.
-
-
-Sample PHP Code after setting up pagination object.
-
+<code>
 <?php $elements = $paginator->getPagingElements(); ?>
 <nav class="app-pagination" aria-label="...">
     <ul class="pagination justify-content-center">
@@ -56,4 +58,4 @@ Sample PHP Code after setting up pagination object.
         <?php } ?>
     </ul>
 </nav>
-
+</code>
