@@ -58,5 +58,4 @@ Sample PHP Code after setting up pagination object.<br>
         <?php } ?>
     </ul>
 </nav>
-</code>
 ```
